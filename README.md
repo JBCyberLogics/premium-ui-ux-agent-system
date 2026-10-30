@@ -1,5 +1,6 @@
 # Premium UI/UX Agent System
 
+<<<<<<< HEAD
 ### Elevating AI-generated interfaces to production-grade design.
 
 A framework-agnostic design intelligence and quality engineering system for AI coding agents. Built to move beyond generic AI-generated layouts and establish a consistent standard for sophisticated, accessible, responsive, and production-ready interfaces.
@@ -248,33 +249,71 @@ premium-ui-ux-agent-system/
 ├── SKILL.md
 ├── PREMIUM_UI_UX.md
 │
+=======
+**Version:** 1.0.0  
+**Purpose:** A reusable, framework-agnostic operating standard for software-development agents that design, build, improve, or review user interfaces.
+
+## What this system does
+
+This package helps coding agents produce interfaces that are visually distinctive, usable, accessible, responsive, technically sound, and honestly verified. It applies to frontend and full-stack work, new products, existing applications, redesigns, and individual UI features.
+
+It is deliberately **adaptive but demanding**: it defines quality expectations without forcing every product into the same aesthetic, framework, component library, or animation style.
+
+## Start here
+
+1. Read [`SKILL.md`](SKILL.md). It is the operational entry point for an agent.
+2. Follow [`PREMIUM_UI_UX.md`](PREMIUM_UI_UX.md). It is the authoritative design standard.
+3. Use the supporting policies and checklists when relevant. The skill identifies when each is needed.
+4. Preserve the user's requirements, the existing product architecture, and working functionality.
+
+## Package structure
+
+```text
+premium-ui-ux-agent-system/
+├── README.md
+├── SKILL.md
+├── PREMIUM_UI_UX.md
+>>>>>>> e5605b9 (Initial release: Premium UI/UX Agent System v1.0.0)
 ├── governance/
 │   ├── DESIGN_DECISION_PROTOCOL.md
 │   ├── QUALITY_ACCEPTANCE_CRITERIA.md
 │   └── AGENT_AUTONOMY_AND_APPROVALS.md
+<<<<<<< HEAD
 │
+=======
+>>>>>>> e5605b9 (Initial release: Premium UI/UX Agent System v1.0.0)
 ├── evaluation/
 │   ├── UI_UX_QUALITY_SCORING.md
 │   ├── VISUAL_AUDIT_CHECKLIST.md
 │   └── DELIVERY_REPORT_TEMPLATE.md
+<<<<<<< HEAD
 │
+=======
+>>>>>>> e5605b9 (Initial release: Premium UI/UX Agent System v1.0.0)
 ├── technical-guidance/
 │   ├── ANIMATION_AND_MOTION_GUIDELINES.md
 │   ├── TECHNOLOGY_AND_LIBRARY_SELECTION.md
 │   ├── RESPONSIVE_AND_ACCESSIBILITY_STANDARDS.md
 │   └── PERFORMANCE_AND_IMPLEMENTATION_STANDARDS.md
+<<<<<<< HEAD
 │
+=======
+>>>>>>> e5605b9 (Initial release: Premium UI/UX Agent System v1.0.0)
 ├── workflows/
 │   ├── PROJECT_DISCOVERY_AND_DESIGN_WORKFLOW.md
 │   ├── EXISTING_PROJECT_AUDIT.md
 │   └── REFERENCE_RESEARCH_WORKFLOW.md
+<<<<<<< HEAD
 │
+=======
+>>>>>>> e5605b9 (Initial release: Premium UI/UX Agent System v1.0.0)
 └── maintenance/
     ├── LIBRARY_REVIEW_AND_MAINTENANCE.md
     ├── CHANGELOG.md
     └── VERSIONING_POLICY.md
 ```
 
+<<<<<<< HEAD
 ## Design and Engineering Principles
 
 The system follows these principles across supported development workflows:
@@ -344,3 +383,86 @@ If this project helps improve your AI-assisted development workflow, consider gi
   <strong>Premium UI/UX Agent System</strong><br>
   <em>Raising the standard of AI-driven interface development.</em>
 </p>
+=======
+## Installation
+
+### Option A — Global shared directory
+
+This stores the package in one stable location on Linux:
+
+```bash
+mkdir -p "$HOME/.local/share/agent-skills"
+cp -a premium-ui-ux-agent-system "$HOME/.local/share/agent-skills/"
+```
+
+The resulting path is:
+
+```text
+~/.local/share/agent-skills/premium-ui-ux-agent-system/
+```
+
+This is a **shared filesystem installation**, not a guarantee that every agent automatically discovers it. Each coding agent has its own skill-discovery conventions. Configure the agent to read the package's `SKILL.md`, or use the agent-specific installation method described below.
+
+### Option B — Global instructions for agents that support a user-level instruction file
+
+Some tools support a global instruction file in the user's home directory; others use a settings UI, configuration file, or skills directory. Do not assume one path works for every agent.
+
+Add a short instruction to the agent's actual global instruction mechanism:
+
+> For software-development tasks involving UI, UX, frontend, or full-stack interface work, use the Premium UI/UX Agent System at `~/.local/share/agent-skills/premium-ui-ux-agent-system/SKILL.md`. Read and follow it. Treat its `PREMIUM_UI_UX.md` as the design authority. Resolve supporting documents through links in the skill and README.
+
+Keep the full package in the shared directory; avoid copying the entire standard into every global prompt.
+
+### Option C — Project-level installation
+
+For a repository where the whole team should use the standard:
+
+```bash
+mkdir -p .agent/skills
+cp -a "$HOME/.local/share/agent-skills/premium-ui-ux-agent-system" .agent/skills/
+```
+
+Then add a project instruction pointing to `.agent/skills/premium-ui-ux-agent-system/SKILL.md`. Adapt the folder and instruction mechanism to the agent in use.
+
+## Agent-specific discovery
+
+Before configuring an agent, check its current official documentation for:
+- supported skill or instruction format;
+- user-level/global discovery location;
+- project-level discovery location;
+- whether nested supporting files are included or must be explicitly referenced;
+- precedence between global and project instructions.
+
+Do not rename `SKILL.md` if the agent requires that exact filename. Do not assume a `skills/` folder is automatically scanned unless the tool documents it.
+
+## Updating the installation
+
+Back up or version the existing package before replacing it. Example:
+
+```bash
+cp -a "$HOME/.local/share/agent-skills/premium-ui-ux-agent-system" \
+  "$HOME/.local/share/agent-skills/premium-ui-ux-agent-system.backup"
+```
+
+Extract or copy the new version into the same parent directory, then verify the files. See [`maintenance/VERSIONING_POLICY.md`](maintenance/VERSIONING_POLICY.md).
+
+## Core operating rules
+
+- User requirements and project constraints take precedence.
+- Major creative-direction changes require approval.
+- Routine implementation decisions are autonomous within the approved direction.
+- Visual inspection is mandatory whenever suitable inspection tools are available.
+- A weighted 100-point score is required for substantial UI/UX work.
+- Critical failures block acceptance regardless of score.
+- Never claim tests, screenshots, accessibility checks, or visual inspection that did not occur.
+
+## Documents
+
+- [`SKILL.md`](SKILL.md) — agent workflow and behaviour.
+- [`PREMIUM_UI_UX.md`](PREMIUM_UI_UX.md) — authoritative design requirements.
+- [`governance/`](governance/) — decision rights and acceptance rules.
+- [`evaluation/`](evaluation/) — scoring, audits, and reporting.
+- [`technical-guidance/`](technical-guidance/) — technology, motion, accessibility, and performance.
+- [`workflows/`](workflows/) — discovery, existing-project audits, and reference research.
+- [`maintenance/`](maintenance/) — library review and document versioning.
+>>>>>>> e5605b9 (Initial release: Premium UI/UX Agent System v1.0.0)
